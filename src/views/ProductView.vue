@@ -9,7 +9,7 @@ const router = useRouter();
 
 const id = route.params.id;
 const product = ref({});
-const API_URL = `http://localhost:3000/products/${id}`;
+const API_URL = `${import.meta.env.BASE_URL}/products/${id}`;
 
 onMounted(() => {
   fetchData();
